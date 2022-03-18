@@ -5,9 +5,579 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+ 
 }
+
+body[data-aos-duration='4000'] [data-aos], [data-aos][data-aos][data-aos-duration='4000']{
+  transition-duration: 4000ms;
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+::-webkit-scrollbar{
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-button{
+  display: none;
+}
+::-webkit-scrollbar-track{
+  background-color: #000000;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: rgb(26, 58, 199);
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: rgb(0, 0, 0);
+}
+
+.header{
+  background-color: rgb(255, 255, 255);
+  width: 100vmax;
+  height: 10.3cm;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.imglogo{
+  background-image: url(./Img/daralogo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 6.2cm;
+  height: 3.4cm;
+
+}
+.headtxt h1{
+text-align: center;
+font-family: Georgia, 'Times New Roman', Times, serif;
+padding-top: 10px;
+font-weight: 500;
+font-size: 1cm;
+
+}
+
+.headtxt h6 {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 100;
+  color: rgb(109, 109, 109);
+  padding-top: 2px;
+}
+
+.headsocialmedia ul li {
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  border-radius: 50%;
+  margin: 5px;
+  list-style: none;
+  color: rgb(255, 255, 255);
+  background-color: #15b6b8;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.headsocialmedia ul {
+  display: flex;
+  justify-content: center;
+  padding: 2px;
+  margin: 0px;
+}
+
+/* Navbar css here below */
+
+.navbar {
+  height: 55px;
+  width: 100%;
+  background-color: #15b6b8;
+  margin:0px 0px;
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  z-index: 99;
+  box-shadow: 0px 3px 7px rgba(88, 85, 85, 0.788);
+}
+
+
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+}
+
+.navbar ul li {
+  
+  margin: 5px;
+  padding: 12px;
+  background: none;
+  width: 100px;
+  height: auto;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: Raleway;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.navbar ul li:hover>a {
+  color: rgb(105, 105, 105);
+  transition: 0.9s ease;
+}
+
+.navbar ul ul {
+  display: none;
+}
+
+.navbar ul li:hover>ul {
+  display: block;
+  padding-top: 13px;
+}
+
+.navbar ul ul li {
+  background-color: #15b6b8;
+  padding-top: 15px;
+  margin: 0px;
+  width: 120px;
+  transform: translateX(-11px);
+}
+
+/* body css here */
+
+.background {
+  height: 14cm;
+  background-image: url('./Img/background\ two.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-top: -43px;
+}
+
+.background h1 {
+  padding-top: 9.1cm;
+  padding-left: 20px;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.7cm;
+  text-shadow: 6px 3px 4px black;
+}
+
+.background h5 {
+  color: rgb(16, 0, 105);
+  font-size: 0.5cm;
+  background-color: aliceblue;
+  padding: 0px 24px;
+  text-shadow: 0px 0px 10px rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  margin-top: -20px;
+  
+}
+
+
+
+.bodydata {
+  width: auto;
+  height: 320px;
+  background-color: rgb(255, 255, 255);
+}
+/*body data */
+.bodydata h1 {
+  font-size: 30px;
+  color: rgb(58, 58, 58);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 400;
+  margin:60px 60px;
+  margin-bottom: 30px;
+}
+
+.bodydata h5 {
+  font-size: 20px;
+  margin:0px 60px;
+  color: rgb(85, 85, 85);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 100;
+  line-height: 1.4cm;
+}
+
+
+/* three images about content workshop */
+
+.threeph{
+  display: flex;
+  justify-content: baseline;
+  align-items: flex-start;
+  width: 100%;
+  height: 11cm;
+}
+.aboutimg{
+  background-image: url(./Img/about.jpg);
+}
+.aboutimg:hover{
+  box-shadow: 0px 2px 12px rgb(4, 55, 88);
+  transform: scale(101%);
+  transition: 0.1s ease-in-out;
+}
+.contentimg{
+  background-image: url(./Img/content.jpg);
+}
+.contentimg:hover{
+  box-shadow: 0px 2px 12px rgb(4, 55, 88);
+  transform: scale(101%);
+  transition: 0.1s ease-in-out;
+}
+.workshopimg{
+  background-image: url(./Img/workshop.jpg);
+}
+.workshopimg:hover{
+  box-shadow: 0px 2px 12px rgb(4, 55, 88);
+  transform: scale(101%);
+  transition: 0.1s ease-in-out;
+}
+.three{
+  display: flex;
+  justify-content: flex-start;
+  align-items:center;
+  flex-direction: column;
+  width: 35%;
+  height: 11cm;
+}
+.three1{
+  display: flex;
+  justify-content: flex-start;
+  align-items:center;
+  flex-direction: column;
+  width: 35%;
+  height: 11cm;
+}
+
+
+.timg{
+
+border-radius: 0px 30px;
+height: 7cm;
+width: 70%;
+background-size: cover;
+background-repeat: no-repeat;
+box-shadow: 0px 2px 8px rgb(0, 0, 0);
+}
+.thead h2,h4{
+  color: rgb(85, 85, 85);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 100;
+  margin: 22px 20px;
+}
+
+/*  feedback guys */
+
+.feedbackmain{
+  /* background-color: blueviolet; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 18cm;
+}
+.feedback{
+  /* background-color: #15b6b8; */
+  height: 10cm;
+  width: 40%;
+  margin: 20px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.feedrimg{
+  background-image: url('./Img/caroline.jpg');
+  background-size: cover;
+height: 3cm;
+width: 3cm;
+border-radius: 50%;
+}
+.feedlimg{
+  background-image: url('./Img/takashi.jpg');
+  background-size: cover;
+  height: 3cm;
+  width: 3cm;
+  border-radius: 50%;
+  }
+
+
+  .feedtext{
+margin:12px 62px;
+text-align: center;
+  }
+  .feedtext h3{
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: oblique;
+  font-size: 0.4cm;
+  color: rgb(131, 131, 131);
+  }
+  .feedtext h4{
+    font-weight: 700;
+    font-style: normal;
+    font-size: 0.4cm;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #15b6b8;
+  }
+
+
+
+
+
+
+/*mapp is here*/
+.map{
+  background-color: yellow;
+  width: 86%;
+  height:7cm;
+}
+.mapr{
+  width: 86%;
+  height:7cm;
+}
+.mapl{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 86%;
+  height:7cm;
+}
+.maplr{
+  background-image: url(./Img/daralogo.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  width: 5.5cm;
+  height: 3cm;
+}
+
+.three1 h3{
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(85, 85, 85);
+  text-align: justify;
+  padding: 12px 60px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.mapr h4{
+  font-size: 16px;
+  font-weight: 400;
+  text-align: justify;
+  color:rgb(85, 85, 85);
+  line-height: 0.9cm;
+  padding: 0px 60px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* bootom */
+
+.bottom {
+  height: 3.5cm;
+  background-color: rgb(77, 77, 77);
+}
+
+.header2 ul li {
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  border-radius: 50%;
+  margin: 6px 10px;
+  list-style: none;
+  color: rgb(255, 255, 255);
+  background-color: #15b6b8;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.header2 ul {
+  display: flex;
+  justify-content: center;
+  padding: 12px;
+}
+
+.bottom p {
+  text-align: center;
+  font-size: 15px;
+  color: aliceblue;
+  text-transform: uppercase;
+}
+
+
+@media screen and (max-width:1100px){
+ 
+  .threeph{
+  height: 12cm;
+  }
+  .three{
+    height: 8cm;
+  }
+  .background h1 {
+    font-size: 1.6cm;
+  }
+  .background h5 {   
+    font-size: 0.4cm;
+  }
+  .thead h2{
+    font-size: 0.6cm;
+  }
+  .thead h4{
+    font-size: 0.5cm;
+  }
+  .mapr h4{
+    line-height: 0.8cm;
+    padding: 0px 40px;
+  }
+
+}
+@media screen and (max-width:1000px){
+  .mapr h4{
+    line-height: 0.8cm;
+    padding: 0px 10px;
+  }
+}
+@media (orientation:portrait){
+  .mapr h4{
+    line-height: 0.8cm;
+    padding: 0px 10px;
+  }
+  .header{
+    width: 100%;
+  }
+  .navbar {
+    display: none;  
+  }
+  
+  .background {
+    background-size: contain; 
+  }
+  
+.background h1 {
+  padding-top: 5.1cm;
+  padding-left: 20px;
+  font-size: 0.9cm;
+  
+}
+
+.background h5 {
+  font-size: 0.5cm;
+  padding: 0px 24px;
+}
+.bodydata {
+  width: 100%;
+  height: 260px;
+
+}
+.bodydata h1 {
+  font-size: 30px;
+  color: rgb(58, 58, 58);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 400;
+  margin:-200px 40px;
+  margin-bottom: 30px;
+}
+.bodydata 
+h5 {
+  font-size: 18px;
+  margin:0px 40px;
+  line-height: 1cm;
+}
+.threeph{
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  width: auto;
+  height: 34cm;
+  flex-direction: column;
+  
+} 
+.three{
+ width: 75%;
+
+  height: 10cm;
+  margin-top: 80px;
+  border-bottom: 2px solid rgb(172, 172, 172);
+}
+.timg{
+
+  border-radius: 0px 20px;
+  height: 20cm;
+  width: 100%;
+  background-size: cover;
+  
+  }
+  
+.feedbackmain{
+  
+  flex-direction: column;
+  height: 37cm;
+  margin-top: 100px ;
+}
+.feedback{
+   
+  height: 13cm;
+  /* width: 50%; */
+  margin: 10px 0px;
+}
+
+.feedimglr{
+
+height: 4cm;
+width: 4cm;
+
+}
+.feedtext{
+  margin:12px -30px;
+    }
+    .feedtext h3{
+    font-size: 0.5cm;
+    }
+    .feedtext h4{
+      font-size: 0.5cm;
+    }
+
+    /*bootom*/
+    
+.three1{
+width: 75%;
+height: 10cm;
+margin: 20px 0px;
+}
+.three1 h3{
+  font-size: 19px;
+  font-weight: 400;
+  color: rgb(85, 85, 85);
+  text-align: justify;
+  padding: 12px 10px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.mapr h4{
+  font-size: 19px;
+  font-weight: 400;
+  text-align: justify;
+  color:rgb(85, 85, 85);
+  line-height: 0.9cm;
+  padding: 0px 0px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* bootom */
+
+.bottom {
+  height: 3cm;
+  margin-top:90px;
+}
+
+
+  
 }
