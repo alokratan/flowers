@@ -6,7 +6,7 @@ function Navbar() {
         
         <ul>
             <li><a href="/Home">HOME</a></li>
-            <li><a href="/Service">SERVICE</a>
+            <li><a onClick={false} href="/">SERVICE</a>
                 <ul>
                     <li><a href="/Flower">FLOWERS</a></li>
                     <li><a href="/Wedding">WEDDINGS</a></li>

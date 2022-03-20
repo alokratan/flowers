@@ -7,15 +7,15 @@ function Bootom() {
 
         <ul>
 
-            <li>
-                FB
-            </li>
-            <li>
-                PT
-            </li>
-            <li>
-                IG
-            </li>
+        <li>
+<i class="bi bi-facebook"></i>
+</li>
+<li>
+<i class="bi bi-pinterest"></i>
+</li>
+<li>
+<i class="bi bi-twitter"></i>
+</li>
         </ul>
 
     </div>

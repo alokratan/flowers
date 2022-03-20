@@ -13,13 +13,13 @@ function Header() {
 <ul>
 
 <li>
-    FB
+<i class="bi bi-facebook"></i>
 </li>
 <li>
-    PT
+<i class="bi bi-pinterest"></i>
 </li>
 <li>
-    IG
+<i class="bi bi-twitter"></i>
 </li>
 </ul>
 </div>

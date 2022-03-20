@@ -1,6 +1,8 @@
 import React from 'react'
+
 import AOS from 'aos'
 import 'aos/dist/aos.css';
+import SimpleMap from './SimpleMap';
 AOS.init();
 
 function Body() {
@@ -55,21 +57,6 @@ function Body() {
     </div>
 
 </div>
-{/* 
-<div class="takpro">
-        <div class="car"></div>
-        <div class="tak"></div>
-    </div>
-
-    <div class="twopro">
-        <div class="caroline cartak">Amazing flowers! My husband sent me a bouquet of flowers for our wedding anniversary from Dara and they were absolutely gorgeous and looked great when they arrived.<br/>
-            <h6>CAROLINE</h6>
-        </div>
-        <div class="takashi cartak">A huge thank you for doing such a great job on our wedding flowers – they looked absolutely beautiful! I will be recommending you to all my friends!
-            <br/>
-            <h6>TAKASHI</h6>
-        </div>
-    </div> */}
 
 
 
@@ -84,9 +71,14 @@ function Body() {
 
 
 </div>
-<div className="three1" data-aos="flip-up" data-aos-delay="600">
+<div className="three1">
 <div className="thead"><h2>-VISIT-</h2></div>
-<div className="map"></div>
+<div className="map">
+
+<SimpleMap/>
+
+
+</div>
 <h3>3999 Mission Boulevard, San Diego CA 92109 1-202-555-1212</h3>
 
 </div>
@@ -107,4 +99,4 @@ function Body() {
   )
 }
 
-export default Body
+export default Body;
