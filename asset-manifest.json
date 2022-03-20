@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/flowers/static/css/main.633c0ca1.css",
+    "main.js": "/flowers/static/js/main.e5faacb6.js",
+    "static/media/background two.jpg": "/flowers/static/media/background two.d77a705e3ec8258b2b88.jpg",
+    "static/media/content.jpg": "/flowers/static/media/content.a0c2c184176b03caadd0.jpg",
+    "static/media/workshop.jpg": "/flowers/static/media/workshop.1f19a4327bf21e4167cd.jpg",
+    "static/media/about.jpg": "/flowers/static/media/about.8b4095d0a2fcb0ab6480.jpg",
+    "static/media/daralogo.jpg": "/flowers/static/media/daralogo.469f2fe286c7112cdef0.jpg",
+    "static/media/takashi.jpg": "/flowers/static/media/takashi.9362d8d4891e8f25d5ed.jpg",
+    "static/media/caroline.jpg": "/flowers/static/media/caroline.78af45cd160ee1368424.jpg",
+    "index.html": "/flowers/index.html",
+    "main.633c0ca1.css.map": "/flowers/static/css/main.633c0ca1.css.map",
+    "main.e5faacb6.js.map": "/flowers/static/js/main.e5faacb6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.633c0ca1.css",
+    "static/js/main.e5faacb6.js"
+  ]
+}
